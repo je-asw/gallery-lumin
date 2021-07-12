@@ -1,0 +1,23 @@
+{
+  "devDependencies": {
+    "shadow-cljs": "^2.14.3"
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "xregexp": "^5.0.2"
+  },
+  "name": "gallery-lumin",
+  "description": "generated using Luminus version \"4.14\"",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
