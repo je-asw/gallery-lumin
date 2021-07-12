@@ -49,6 +49,7 @@
                  [buddy/buddy-hashers "1.8.1"]
                  [buddy/buddy-sign "3.4.1"]
                  [ring/ring-json "0.5.1"]
+                 [clj-pdf "2.5.8"]
                  ]
 
   :min-lein-version "2.0.0"

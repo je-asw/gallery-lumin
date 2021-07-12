@@ -21,6 +21,7 @@
    ["/register"  {:post auth/register!}]
    ["/users" {:get u/list-users}]
    ["/user/delete" {:get u/list-users}]
+   ["/export2pdf" {:get u/users-into-pdf}]
    ["/docs" {:get (fn [_]
                     (-> (response/ok (-> "docs/docs.md" io/resource slurp))
                         (response/header "Content-Type" "text/plain; charset=utf-8")))}]])
