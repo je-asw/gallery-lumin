@@ -20,7 +20,7 @@
    ["/logout" {:get auth/logout! }]
    ["/register"  {:post auth/register!}]
    ["/users" {:get u/list-users}]
-   ["/user/delete" {:get u/list-users}]
+   ["/user/delete" {:delete u/delete-user}]
    ["/export2pdf" {:get u/users-into-pdf}]
    ["/docs" {:get (fn [_]
                     (-> (response/ok (-> "docs/docs.md" io/resource slurp))

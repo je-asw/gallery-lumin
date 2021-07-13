@@ -1,38 +1,37 @@
 (ns gallery-lumin.components.users.user
   (:require [reagent.session :as session]
             [reagent.core :refer [atom]]
-            [ajax.core :refer [GET POST]]
+            [ajax.core :refer [GET POST DELETE]]
 
             )
   )
 
 
-(defn handler-user [response]
+(defn handler-print [response]
   (.log js/console (str response)))
 
-;(defn delete! [row]
-; (.log js/console (str row))
-; (Get "/user/delete"
-;    {:params        @row
-;      }
-;     )
-; )
+(defn delete! [row]
+ (.log js/console (str row))
+ (DELETE "/user/delete"
+         {:params {(:id row)}
+          }
+     )
+ )
 
 (defn get-users! []
   (GET "/users"
        {:handler
         #(do (session/put! :users %)
-             (handler-user %))
+             (handler-print %))
         })
   )
 
 (defn export-to-pdf []
   (GET "/export2pdf"
-       {:handler
-        #(do (session/put! :pdf %)
-             (handler-user %))
+       {:handler #(do (session/put! :pdf %)
+                      (handler-print %))
         }
-  ))
+       ))
 
 
 ;;set the body of table users-data
@@ -51,7 +50,7 @@
       [:td]
       [:td [:div
             [:button.btn.btn-primary
-             ;{:on-click #(delete! row)}
+             {:on-click #(delete! row)}
              "delete"]
             ]]
       ])

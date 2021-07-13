@@ -36,7 +36,7 @@
     <orderEntry type="library" name="Leiningen: clj-commons/clj-yaml:0.7.0" level="project" />
     <orderEntry type="library" name="Leiningen: clj-pdf:2.5.8" level="project" />
     <orderEntry type="library" name="Leiningen: clj-stacktrace:0.2.8" level="project" />
-    <orderEntry type="library" name="Leiningen: clj-time:0.13.0" level="project" />
+    <orderEntry type="library" name="Leiningen: clj-time:0.15.2" level="project" />
     <orderEntry type="library" name="Leiningen: clj-tuple:0.2.2" level="project" />
     <orderEntry type="library" name="Leiningen: cljs-ajax:0.8.3" level="project" />
     <orderEntry type="library" name="Leiningen: clojure-complete:0.2.5" level="project" />
@@ -94,7 +94,7 @@
     <orderEntry type="library" name="Leiningen: io.undertow/undertow-core:2.2.7.Final" level="project" />
     <orderEntry type="library" name="Leiningen: javax.servlet/javax.servlet-api:3.1.0" level="project" />
     <orderEntry type="library" name="Leiningen: javax.xml.bind/jaxb-api:2.3.0" level="project" />
-    <orderEntry type="library" name="Leiningen: joda-time:2.9.7" level="project" />
+    <orderEntry type="library" name="Leiningen: joda-time:2.10" level="project" />
     <orderEntry type="library" name="Leiningen: json-html:0.4.7" level="project" />
     <orderEntry type="library" name="Leiningen: lambdaisland/deep-diff:0.0-47" level="project" />
     <orderEntry type="library" name="Leiningen: luminus-migrations:0.7.1" level="project" />
